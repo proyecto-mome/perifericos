@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Refrigeración | By Edgar</title>
+    <link rel="stylesheet" href="Diseño/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+
+    body{
+        font-family: thaoma;
+        font-size: 15px;
+        line-height: 1.75;
+        margin: 0;
+        padding: 0;
+    }
+
+    #timeline{
+        display: flex;
+        background-color: #031725;
+    }
+
+    #timeline:hover .item{
+        width: 23.3333%;
+    }
+
+    .item{
+        transform: translate3d(0,0,0);
+        position: relative;
+        width: 25%;
+        height: 100vh;
+        min-height: 600px;
+        color: white;
+        overflow: hidden;
+        transition: width 0.5s ease;
+    }
+
+    .item::before, .item:after{
+        transform: translate3d(0,0,0);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item:after{
+        background: rgba(21,126,209,0.85);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .item:before{
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75%);
+        z-index: 1;
+        opacity: 1;
+        transform: translate3d(0,0,0) translateY(50%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .item:hover{
+        width: 77% !important;
+    }
+
+    .item:hover .content{
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.75s ease 0.5s;
+    }
+
+    .item:hover .bg{
+        filter: grayscale(0);
+
+    }
+
+    .content{
+        transform: translate3d(0,0,0) translate3d(25px);
+        position:relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0 1.618em;
+        top: 55%;
+        opacity: 0;
+    }
+
+    .content h1{
+        font-family: tahoma;
+        text-transform: uppercase;
+        color: #ff0000;
+        font-size: 1.44rem;
+        font-weight: normal;
+    }
+    .letra{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+        border-top: 1px solid rgb(254, 9, 224);
+        border-bottom: 1px solid rgb(254, 9, 224);
+    }
+
+    .letra p{
+        font-family: tahoma;
+        font-size: 1.3rem;
+        line-height: 0;
+        color: rgb(0, 255, 209);
+    }
+    .bg{
+        transform: translate3d(0,0,0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+        transition: filter 0.5s ease;
+        filter: grayscale(100%);
+    }
+
+    p{
+        font-family: tahoma;
+        font-weight: normal;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <section id="timeline">
+        <div class="item">
+        <div class="bg" style="background-image: url(images/Radiador.jpg);"></div>
+        <div class="letra">
+            <p>Radiador</p>
+        </div>
+        <div class="content">
+            <h1>EKWB EK- Coolstream 360mm</h1>
+            <p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="middle">
+              <a href="https://www.ekwb.com/shop/ek-coolstream-pe-360-triple" class="btn btn4">Especificaciones</a>
+            </div>
+            </p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bg" style="background-image: url(images/Ventiladores.jpg);"></div>
+        <div class="letra">
+            <p>Ventiladores</p>
+        </div>
+        <div class="content">
+            <h1>Corsair SP 120</h1>
+            <p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="middle">
+              <a href="https://www.corsair.com/es/es/Categor%C3%ADas/Productos/Ventiladores/sp-series-rgb-led-config/p/CO-9050061-WW" class="btn btn4">Especificaciones</a>
+              </div>
+            </p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="bg" style="background-image: url(images/Bloque.jpg);"></div>
+        <div class="letra">
+            <p>Bloque CPU</p>
+        </div>
+        <div class="content">
+            <h1>RAIJINETEK CWB RGB</h1>
+            <p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="middle">
+              <a href="https://www.raijintek.com/en/products_detail.php?ProductID=79" class="btn btn4">Especificaciones</a>
+              </div>
+            </p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="bg" style="background-image: url(images/Color.jpg);"></div>
+        <div class="letra">
+            <p>LIQUIDO</p>
+        </div>
+        <div class="content">
+                <h1>Thermalteke C1000 White coolant</h1>
+            <p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="middle">
+              <a href="https://es.thermaltake.com/c1000-opaque-coolant-white.html" class="btn btn4">Especificaciones</a>
+              </div>
+            </p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="bg" style="background-image: url(images/Tubos.jpg);"></div>
+        <div class="letra">
+            <p>TUBO</p>
+        </div>
+        <div class="content">
+            <h1>Thermaltake Tubler PETG</h1>
+            <p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="middle">
+              <a href="https://es.thermaltake.com/v-tubler-petg-tube.html" class="btn btn4">Especificaciones</a>
+              </div>
+            </p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="bg" style="background-image: url(images/Deposito.jpg);"></div>
+        <div class="letra">
+            <p>Deposito</p>
+        </div>
+        <div class="content">
+            <h1>EKWB EK-XPRES 140 REVO D5 RGB</h1>
+            <p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="middle">
+              <a href="https://www.ekwb.com/shop/ek-xres-140-revo-d5-rgb-pwm-incl-sl-pump" class="btn btn4">Especificaciones</a>
+              </div>
+            </p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
